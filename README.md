@@ -1,5 +1,5 @@
 # load-kubeconfig [![Build Status](https://travis-ci.org/Collaborne/load-kubeconfig.svg?branch=master)](https://travis-ci.org/Collaborne/load-kubeconfig)
-=========
+
 Tool to merge a kubeconfig file into the user kubectl configuration (`$HOME/.kube/config` or `%USERPROFILE%/.kube/config`)
 
 ## Installation
