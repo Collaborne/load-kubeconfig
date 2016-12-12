@@ -11,6 +11,7 @@ const kubeConfigPath = path.resolve(userDir, '.kube/config')
 // Load the main kube config
 const kubeConfigContents = fs.readFileSync(kubeConfigPath);
 const kubeConfig = yaml.safeLoad(kubeConfigContents, 'UTF-8');
+const currentContext = kubeConfig['current-context'];
 
 // Load the provided kube config
 const otherKubeConfigPath = process.argv[2];
@@ -52,7 +53,7 @@ function namedObjectArrayMerge(a, b) {
 	return result;
 }
 
-const finalKubeConfig = deepMerge(kubeConfig, otherKubeConfig, { arrayMerge: namedObjectArrayMerge });
+const finalKubeConfig = deepMerge.all([kubeConfig, otherKubeConfig, { 'current-context': currentContext }], { arrayMerge: namedObjectArrayMerge });
 
 fs.writeFile(kubeConfigPath, yaml.safeDump(finalKubeConfig), function(err) {
 	if (err) {
