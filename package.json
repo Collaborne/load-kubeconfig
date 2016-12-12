@@ -1,6 +1,6 @@
 {
   "name": "load-kubeconfig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load a kubectl configuration into the user configuration",
   "main": "index.js",
   "scripts": {
