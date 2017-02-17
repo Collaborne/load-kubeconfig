@@ -1,6 +1,4 @@
-# load-kubeconfig [![Build Status](https://travis-ci.org/Collaborne/load-kubeconfig.svg?branch=master)](https://travis-ci.org/Collaborne/load-kubeconfig)
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/Collaborne/load-kubeconfig.svg)](https://greenkeeper.io/)
+# load-kubeconfig [![Build Status](https://travis-ci.org/Collaborne/load-kubeconfig.svg?branch=master)](https://travis-ci.org/Collaborne/load-kubeconfig) [![Greenkeeper badge](https://badges.greenkeeper.io/Collaborne/load-kubeconfig.svg)](https://greenkeeper.io/)
 
 Tool to merge a kubeconfig file into the user kubectl configuration (`$HOME/.kube/config` or `%USERPROFILE%/.kube/config`)
 
