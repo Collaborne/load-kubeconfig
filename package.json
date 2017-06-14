@@ -27,6 +27,6 @@
     "js-yaml": "^3.7.0"
   },
   "devDependencies": {
-    "eslint": "^3.11.1"
+    "eslint": "^4.0.0"
   }
 }
